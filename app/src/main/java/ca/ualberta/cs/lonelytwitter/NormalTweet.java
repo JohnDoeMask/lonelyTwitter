@@ -3,7 +3,13 @@ package ca.ualberta.cs.lonelytwitter;
 import java.util.Date;
 
 /**
- * Created by heyuehuang on 2017-01-19.
+ * This class is an Normal tweet which inherits from Tweet class of the project. <br> In this class,
+ * There are two instantiates, and a boolean method will return false, if the class is called.
+ *
+ * @see Tweet
+ * @author Heyue Huang
+ * @version 1.4.2
+ * @since 1.0
  */
 public class NormalTweet extends Tweet {
     /**

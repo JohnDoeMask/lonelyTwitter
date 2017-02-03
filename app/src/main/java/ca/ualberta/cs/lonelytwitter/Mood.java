@@ -3,7 +3,12 @@ package ca.ualberta.cs.lonelytwitter;
 import java.util.Date;
 
 /**
- * Created by heyuehuang on 2017-02-01.
+ * This class is mood type class of the project. <br> In this class,
+ * A mood type is defined.Two getters and setters for date and mood.
+ *
+ * @author Heyue Huang
+ * @version 1.4.2
+ * @since 1.0
  */
 public abstract class Mood {
     private Date date;

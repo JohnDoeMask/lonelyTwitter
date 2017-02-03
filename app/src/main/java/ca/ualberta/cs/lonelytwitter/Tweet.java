@@ -4,28 +4,11 @@ import java.util.ArrayList;
 import java.util.Date;
 
 /**
- * This class is tweet type class of the project. <br> In this class,
+ * This class is super class which implements Tweetable of the project. <br> In this class,
  * A tweet type is defined.Mood can be added as a list in each tweet.
- * Tweet type:
- * <pre>
- *     pre-formatted text: <br>
- *         File Explorer -> data -> data -> ca.ualberta.cs.lonelytwitter -> files -> file.sav.
- * </pre>
- * <code> begin <br>
- *     some pseduo code here <br>
- * end.</code>
- * The file name is indicated in the &nbsp &nbsp &nbsp FILENAME constant.
- * <ul>
- *     <li>item 1</li>
- *     <li>item 2</li>
- *     <li>item 3</li>
- * </ul>
- * <ol>
- *     <li>item 1</li>
- *     <li>item 2</li>
- *     <li>item 3</li>
- * </ol>
+ * Tweet type
  *
+ * @see Tweetable
  * @author Heyue Huang
  * @version 1.4.2
  * @since 1.0

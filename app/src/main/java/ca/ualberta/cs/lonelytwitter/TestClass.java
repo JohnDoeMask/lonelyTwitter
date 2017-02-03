@@ -7,7 +7,11 @@
 package ca.ualberta.cs.lonelytwitter;
 
 /**
- * Created by heyuehuang on 2017-02-02.
+ * A TestClass for checking copyright.
+ *
+ * @author Heyue Huang
+ * @version 1.4.2
+ * @since 1.0
  */
 
 public class TestClass {

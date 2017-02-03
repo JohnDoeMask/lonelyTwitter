@@ -1,7 +1,11 @@
 package ca.ualberta.cs.lonelytwitter;
 
 /**
- * Created by heyuehuang on 2017-01-19.
+ * This is a interface which has getMessage() method.
+ *
+ * @author Heyue Huang
+ * @version 1.4.2
+ * @since 1.0
  */
 public interface Tweetable {
     /**
@@ -9,6 +13,7 @@ public interface Tweetable {
      *
      * @return the message
      */
+
     public String getMessage();
 
     /**

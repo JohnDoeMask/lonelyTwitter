@@ -56,7 +56,7 @@ public class LonelyTwitterActivity extends Activity {
 
 	/**
 	 * The file that all the tweets are saved there.
-	 * The fromat of the file is JSON.
+	 * The format of the file is JSON.
 	 * @see #loadFromFile()
 	 * @see #saveInFile()
 	 */
