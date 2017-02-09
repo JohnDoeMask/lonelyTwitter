@@ -5,7 +5,6 @@ import java.util.Date;
 /**
  * This class is happy mood which inherits Mood class of the project. <br> In this class,
  * A special message method will be used to return a identified string.
- * Tweet type
  *
  * @see Mood
  * @author Heyue Huang

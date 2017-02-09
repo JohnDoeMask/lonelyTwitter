@@ -6,7 +6,6 @@ import java.util.Date;
 /**
  * This class is super class which implements Tweetable of the project. <br> In this class,
  * A tweet type is defined.Mood can be added as a list in each tweet.
- * Tweet type
  *
  * @see Tweetable
  * @author Heyue Huang
