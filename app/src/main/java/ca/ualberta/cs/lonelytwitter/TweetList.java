@@ -33,7 +33,7 @@ public class TweetList {
         return tweets;
     }
 
-    // check if the tweet id already added.
+    // check if the tweet iw already added.
     public boolean hasTweet(Tweet tweet){
         return tweets.contains(tweet);
     }
@@ -42,6 +42,7 @@ public class TweetList {
         tweets.remove(tweet);
     }
 
+    // get the num of tweets
     public int getCount() {
         return tweets.size();
     }

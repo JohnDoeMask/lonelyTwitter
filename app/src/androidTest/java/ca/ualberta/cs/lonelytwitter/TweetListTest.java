@@ -57,15 +57,19 @@ public class TweetListTest extends ActivityInstrumentationTestCase2 {
         ArrayList<NormalTweet> tweetList = new ArrayList<NormalTweet>();
         TweetList tweets = new TweetList();
 
-        // add two tweets using
+        // add two tweets using addTweet()
         NormalTweet tweet = new NormalTweet("first test tweet");
         NormalTweet tweet2 = new NormalTweet("second test tweet");
         tweets.addTweet(tweet);
         tweets.addTweet(tweet2);
+
+        // add two tweets into the tweetList
         tweetList.add(tweet);
         tweetList.add(tweet2);
 
+        // get the return result of getTweet()
         ArrayList<NormalTweet> returnedTweet = tweets.getTweets();
+        // the two lists supposes be equal
         assertEquals(returnedTweet, tweetList);
     }
 
@@ -82,6 +86,7 @@ public class TweetListTest extends ActivityInstrumentationTestCase2 {
     public void testGetCount(){
         TweetList tweets = new TweetList();
 
+        // add 3 tweets
         NormalTweet tweet = new NormalTweet("first test tweet");
         NormalTweet tweet2 = new NormalTweet("second test tweet");
         NormalTweet tweet3 = new NormalTweet("third test tweet");
@@ -90,6 +95,7 @@ public class TweetListTest extends ActivityInstrumentationTestCase2 {
         tweets.addTweet(tweet2);
         tweets.addTweet(tweet3);
 
+        // the reult of getCount supposes be 3
         assertEquals(tweets.getCount(), 3);
     }
 
