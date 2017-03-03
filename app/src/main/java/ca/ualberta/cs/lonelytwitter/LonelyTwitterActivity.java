@@ -14,8 +14,10 @@ import java.util.List;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -61,6 +63,7 @@ public class LonelyTwitterActivity extends Activity {
 	 * @see #saveInFile()
 	 */
 
+	private LonelyTwitterActivity activity = this;
 	private static final String FILENAME = "file.sav";
 	private enum TweetListOrdering {DATE_ASCENDING, DATE_DESCENDING, TEXT_ASCENDING
 		, TEXT_DESCENDIGN};
@@ -70,6 +73,9 @@ public class LonelyTwitterActivity extends Activity {
 	private  ArrayList<Tweet> tweetList;
 	private  ArrayAdapter<Tweet> adapter;
 
+	public ListView getOldTweetsList() {
+		return oldTweetsList;
+	}
 	/**
 	 * Called when the activity is first created
 	 * @param savedInstanceState
@@ -88,9 +94,7 @@ public class LonelyTwitterActivity extends Activity {
 
 			public void onClick(View v) {
 				setResult(RESULT_OK);
-
 				String text = bodyText.getText().toString();
-
 				text = trimExtraSpaces(text);
 				Tweet tweet = new NormalTweet(text);
 
@@ -106,12 +110,18 @@ public class LonelyTwitterActivity extends Activity {
 
 			public void onClick(View v) {
 				setResult(RESULT_OK);
-
 				tweetList.clear();
-
+				deleteFile("file.sav");
 				adapter.notifyDataSetChanged();
 
-				saveInFile();
+			}
+		});
+
+		oldTweetsList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+				Intent intent = new Intent(activity, EditTweetActivity.class);
+				intent.putExtra("thetweet", adapter.getItem(position).getMessage());
+				startActivity(intent);
 
 			}
 		});
