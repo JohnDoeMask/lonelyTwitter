@@ -62,11 +62,12 @@ public class LonelyTwitterActivity extends Activity {
 	 * @see #loadFromFile()
 	 * @see #saveInFile()
 	 */
-
-	private LonelyTwitterActivity activity = this;
+	// add final
+	private final LonelyTwitterActivity activity = this;
 	private static final String FILENAME = "file.sav";
+	// remove unnecessary ;
 	private enum TweetListOrdering {DATE_ASCENDING, DATE_DESCENDING, TEXT_ASCENDING
-		, TEXT_DESCENDIGN};
+		, TEXT_DESCENDIGN}
 	private EditText bodyText;
 	private ListView oldTweetsList;
 

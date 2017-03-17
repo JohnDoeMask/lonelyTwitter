@@ -48,7 +48,7 @@ public class TweetListTest extends ActivityInstrumentationTestCase2 {
         NormalTweet tweet = new NormalTweet("some tweet");
 
         tweets.addTweet(tweet);
-        NormalTweet returnedTweet = tweets.getTweet(0);
+        NormalTweet returnedTweet = tweets.getTweet();
         assertEquals(returnedTweet.getMessage(), tweet.getMessage());
         assertEquals(returnedTweet.getDate(), tweet.getDate());
     }

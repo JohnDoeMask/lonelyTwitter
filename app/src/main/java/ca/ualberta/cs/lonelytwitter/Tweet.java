@@ -16,7 +16,8 @@ import java.util.Date;
 public abstract class Tweet implements Tweetable, Serializable{
     private Date date;
     private String message;
-    private ArrayList<Mood> moodList = new ArrayList<Mood>();
+    // add final
+    private final ArrayList<Mood> moodList = new ArrayList<Mood>();
 
     /**
      * Instantiates a new Tweet.

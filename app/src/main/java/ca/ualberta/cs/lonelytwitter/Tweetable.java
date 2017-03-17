@@ -13,8 +13,8 @@ public interface Tweetable {
      *
      * @return the message
      */
-
-    public String getMessage();
+    // remove redundant public
+     String getMessage();
 
     /**
      * Sets message.
@@ -22,6 +22,8 @@ public interface Tweetable {
      * @param string the string
      * @throws TweetTooLongException the tweet too long exception
      */
-    public void setMessage(String string) throws TweetTooLongException;
+
+    // remove redundant public
+    void setMessage(String string) throws TweetTooLongException;
 
 }

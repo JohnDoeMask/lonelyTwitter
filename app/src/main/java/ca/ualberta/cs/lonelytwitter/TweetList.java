@@ -24,9 +24,10 @@ public class TweetList {
         }
     }
 
-    public NormalTweet getTweet(int index){
+    // index is always 0
+    public NormalTweet getTweet(){
 //        return new NormalTweet("not the tweet");
-        return tweets.get(index);
+        return tweets.get(0);
     }
 
     public ArrayList<NormalTweet> getTweets(){
